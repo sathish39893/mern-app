@@ -7,11 +7,12 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "dev":"concurrently \"npm run server\" \"npm run client\"  "
+    "dev": "concurrently \"npm run server\" \"npm run client\"  "
   },
   "author": "Sathish Panthagani",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.26.1",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^16.0.0",
@@ -20,7 +21,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.1",
     "react-icons": "^4.3.1",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^8.2.0"
   },
   "devDependencies": {
     "concurrently": "^7.1.0"
