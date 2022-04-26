@@ -80,14 +80,9 @@ const loginUser = asyncHanlder( async (req,res) => {
 // @route GET /api/users/me
 // @access Public
 const getMe = asyncHanlder( async (req,res) =>{
-
-   const {_id, name, email} = await User.findById(req.user.id)
+  
+   res.status(200).json(req.user)
    
-   res.status(200).json({
-       id: _id,
-       name,
-       email
-   })
 });
 
 

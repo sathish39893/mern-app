@@ -26,8 +26,8 @@ function Login() {
         if(isError){
             toast.error(message)
         }
-        if(isSuccess || user){
-            navigate('/')
+        if(isSuccess && user){
+            navigate('/dashboard')
         }
         dispatch(reset())
 
